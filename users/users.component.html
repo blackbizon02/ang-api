@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="btns mt-5">
+        <button *ngFor="let user of users" class="btn btn-success form-control mb-3" [routerLink]="['/users/user_details/' + user.id]">{{user.name}}</button>
+    </div>
+
+</div>

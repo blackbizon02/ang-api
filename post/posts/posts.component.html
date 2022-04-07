@@ -1,0 +1,18 @@
+<!-- user posts -->
+<div class="container">
+    <div class="back mb-5 mt-5">
+        <a [routerLink]="['/users/user_details/' + posts_id]">Go Back</a>
+        <a [routerLink]="['/users']" class="ms-4">Users</a>
+    </div>
+    <div class="content">
+        <div class="card m-4" *ngFor="let post of posts">
+            <div class="card-header">
+              {{post.id}}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{post.title}}</h5>
+              <p class="card-text">{{post.body}}</p>
+            </div>
+          </div>
+    </div>
+</div>

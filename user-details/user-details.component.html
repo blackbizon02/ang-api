@@ -1,0 +1,16 @@
+<!--user info-->
+<div class="container">
+    <div class="back mb-5 mt-5">
+        <a [routerLink]="['/users']">Go Back</a>
+    </div>
+    <div class="content mx-auto shadow p-5 mt-5">
+        <div><div class="inf">Name:</div><span>{{user.name}}</span></div>
+        <div><div class="inf">Email:</div><span>{{user.email}}</span></div>
+        <div><div class="inf">Phone:</div><span>{{user.phone}}</span></div>
+        <div><div class="inf">Adress:</div><span>{{user.address?.street}}</span></div>
+        <div><div class="inf">Zipcode:</div><span>{{user.address?.zipcode}}</span></div>
+        <div><div class="inf">City:</div><span>{{user.address?.city}}</span></div>
+        <div><div class="inf mb-3">Company:</div><span>{{user.company?.name}}</span></div>
+        <a [routerLink]="['/users/user_details/posts/'+ posts_id]">User Posts</a>
+    </div>
+</div>
