@@ -1,2 +1,2 @@
-first link: ang-api.great-site.net
+first link: ang-api.great-site.net ||
 second link: angapi.infinityfreeapp.com
